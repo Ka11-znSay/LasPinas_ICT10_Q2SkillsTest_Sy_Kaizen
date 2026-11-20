@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+     
+    <title>Non-Metal Elements</title>
+
+      <style>
+        body {
+            background-color: #661414;
+            color: white;
+            font-family: 'Rajdhani', sans-serif;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .container {
+            background-color: #1c2935;
+            max-width: 400px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        input {
+            padding: 12px;
+            width: 80%;
+            border: none;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #ff3131;
+            color: #101820;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #ffffff;
+        }
+
+        #result {
+            margin-top: 25px;
+            line-height: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Non-Metal Elements</h1>
+
+    <input type="text" id="element" placeholder="Enter element name">
+
+    <button type="submit" py-click="search_element">Search</button>
+
+    <div id="result"></div>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
